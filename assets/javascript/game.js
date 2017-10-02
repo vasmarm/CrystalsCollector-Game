@@ -107,13 +107,22 @@
     if (counter === targetNumber) {
       wins = wins + 1;
       $("#wins").html(wins);
+      $(".winPicture").css("visibility", "visible");
+      $(".winPicture").fadeIn();
+      $(".winPicture").fadeOut(5000);
       newGame();
     }
 
     else if (counter >= targetNumber) {
       losses = losses + 1;
       $("#losses").html(losses);
+      $(".loosePicture").css("visibility", "visible");
+      $(".loosePicture").fadeIn();
+      $(".loosePicture").fadeOut(5000);
       newGame();
     }
+  });
 
+  $("#instructionsTitle").on("click", function(){
+    $("#instructionsText").toggle();
   });
