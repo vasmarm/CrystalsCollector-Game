@@ -1,0 +1,30 @@
+h1{
+
+	text-align: center;
+}
+
+body{
+	background-image: url("../../assets/images/bk.png");
+	margin: 0 auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+}
+p{
+	text-align: center;
+}
+.instructions{
+	margin: 0 100px 0 90px;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+    background-color: black;
+    color: white;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+}
+
+.crystal-image {
+      width: 300px;
+      height: 300px;
+      margin: 0 0 0 90px;
+    }

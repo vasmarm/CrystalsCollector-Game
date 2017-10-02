@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>The Crystal Game</title>
+	<meta charset="utf-8">
+
+	<!-- CSS References -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+
+	<!-- Bootstrap Reference -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>                 
+ 
+ <h1>
+The Crystal Game
+ </h1>
+  <!-- Restart Button -->
+  <p><a class="btn btn-primary btn-lg" id="restart"href="index.html" role="button">Re-Start</a></p>
+</div>
+
+<!-- Instructions -->
+<div class = "instructions">Instructions - 
+  
+                                 <li>You will be given a random number at the start of the game. </li>
+                                 <li>There are 4 Crystals below. By clicking on a Crystal you will add a specific amount of points to your total score.</li>
+                                 <li>You will Win the game by matching your total score to random number, you Loose the game if your total score goes above the random number.</li>
+                                 <li>The value of each crystal is hidden from you until you click on it.</li>
+                                 <li>Each time when the game starts, the game will change the values of each crystal and random number.</li>
+                                 <li>All The Best!!!</li>
+  </div>
+<br>
+
+<div id="crystals"> </div>
+<br>
+
+<!-- Indicators with the use if Alert Bootstrap -->
+<!-- ****************************************** -->
+
+<!-- Guesses so far indicator -->
+<ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge" id="number-to-guess"></span>
+    Number To Guess -
+  </li>
+</ul>
+
+<!-- Guesses Left -->
+<ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge" id="current_score"></span>
+    Current Score -
+  </li>
+</ul>
+
+
+<!-- Wins  Indicator -->
+<ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge" id="wins"></span>
+    Wins -
+  </li>
+</ul>
+
+<!-- Losses  Indicator -->
+<ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge" id="losses"></span>
+    Losses -
+  </li>
+</ul>
+
+
+<!-- ****************************************** -->
+
+
+ <!-- Java Script -->
+  <script language="javascript" type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
